@@ -65,7 +65,8 @@ class Youtube extends Component {
           src={iframe.src}
           frameBorder="0"
           allowFullScreen
-          allow="autoplay"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
         />
       </div>
     )
