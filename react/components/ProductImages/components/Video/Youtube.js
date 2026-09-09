@@ -6,7 +6,7 @@ class Youtube extends Component {
     super(props)
 
     const { loop, autoplay, title, url } = this.props
-    const params = `autoplay=${autoplay}&loop=${loop}&title=${title}&enablejsapi=1&iv_load_policy=3&modestbranding=1`
+    const params = `autoplay=${autoplay}&loop=${loop}&title=${title}&iv_load_policy=3&modestbranding=1`
     const videoId = Youtube.extractVideoID(url)
 
     this.iframeRef = React.createRef()
